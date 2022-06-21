@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/wifi_station/tianqi/tianqi",
+    "pages/wifi_station/location/location"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#000000",
+    "backgroundColor": "#F0F8FF",
+    "list": [{
+      "pagePath": "pages/start/start",
+      "text": "温湿度",
+      "iconPath": "utils/2.png",
+      "selectedIconPath": "utils/1.png"
+    }, {
+      "pagePath": "pages/wifi_station/location/location",
+      "text": "天气监测",
+      "iconPath": "utils/4.png",
+      "selectedIconPath": "utils/3.png"
+    }]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于天气的效果展示"
+    }
+  },
+
+  "debug": false,
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {}
+}

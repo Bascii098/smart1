@@ -1,0 +1,20 @@
+<!--pages/wifi_station/location/location.wxml-->
+
+<view class="root-wrapper">
+  <view class="root">
+    <view class="header-wrapper">
+      <image style="height: 40vh;z-index: -999;position: absolute;" mode="heightFix" src="https://s3.bmp.ovh/imgs/2022/06/21/b4d72d2da51218a3.jpeg"></image>
+      <view class="header-content-wrapper">
+        <view class="header-title">
+          <text>空气质量-{{airText}}</text>
+          <text>{{area}}-{{city}}</text>
+        </view>
+        <view class="header-text"><text>{{temp}}℃</text><text>{{weather}}</text></view>
+        <view class="weather-advice" wx:if='{{level<3}}'>紫外线弱，发电效率较低</view>
+        <view class="weather-advice" wx:elif='{{level>3}}'>紫外线强，发电效率较高</view>
+        <view class="weather-advice" wx:else>紫外线中等，发电效率正常</view>
+      </view>
+    </view>
+    <view class="body-wrapper"></view>
+  </view>
+</view>

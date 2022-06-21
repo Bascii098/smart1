@@ -1,0 +1,6 @@
+<!--start.wxml-->
+<view class="intro">
+  您在这里可以看到太阳能板的温湿度和光照数据
+</view>
+
+<button class="btn1" bindtap="navigate">查看设备回传数据</button>
